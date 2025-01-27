@@ -26,6 +26,7 @@ flowchart LR
     A["Voice Recording"] --> B["Extract MFCC"]
     B --> C["LSTM"]
     D["Fully Connected Head"] --> E["Prediction"]
+    C --> D
     F["Demographics"] --> D
 ```
 
